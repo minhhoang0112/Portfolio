@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hoàng Công Minh | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="#home">H.MINH<span>.DEV</span></a>
+      </div>
+      <nav class="navbar">
+        <a href="#home" class="nav-link active">
+          <span class="lang-vi">Trang chủ</span>
+          <span class="lang-en" style="display: none">Home</span>
+          <span class="lang-zh" style="display: none">主页</span>
+          <span class="lang-th" style="display: none">หน้าหลัก</span>
+        </a>
+        <a href="#about" class="nav-link">
+          <span class="lang-vi">Giới thiệu</span>
+          <span class="lang-en" style="display: none">About</span>
+          <span class="lang-zh" style="display: none">介绍</span>
+          <span class="lang-th" style="display: none">แนะนำ</span>
+        </a>
+        <a href="#career" class="nav-link">
+          <span class="lang-vi">Mục tiêu</span>
+          <span class="lang-en" style="display: none">Goals</span>
+          <span class="lang-zh" style="display: none">目标</span>
+          <span class="lang-th" style="display: none">เป้าหมาย</span>
+        </a>
+        <a href="#skills" class="nav-link">
+          <span class="lang-vi">Kỹ năng</span>
+          <span class="lang-en" style="display: none">Skills</span>
+          <span class="lang-zh" style="display: none">技能</span>
+          <span class="lang-th" style="display: none">ทักษะ</span>
+        </a>
+        <a href="#education" class="nav-link">
+          <span class="lang-vi">Học vấn</span>
+          <span class="lang-en" style="display: none">Education</span>
+          <span class="lang-zh" style="display: none">学历</span>
+          <span class="lang-th" style="display: none">การศึกษา</span>
+        </a>
+        <a href="#projects" class="nav-link">
+          <span class="lang-vi">Dự án</span>
+          <span class="lang-en" style="display: none">Projects</span>
+          <span class="lang-zh" style="display: none">项目</span>
+          <span class="lang-th" style="display: none">โปรเจกต์</span>
+        </a>
+        <a href="#contact" class="nav-link">
+          <span class="lang-vi">Liên hệ</span>
+          <span class="lang-en" style="display: none">Contact</span>
+          <span class="lang-zh" style="display: none">联系</span>
+          <span class="lang-th" style="display: none">ติดต่อ</span>
+        </a>
+      </nav>
+      <div class="menu-icon" id="menu-icon">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+    <div class="lang-switcher">
+      <select id="langSelect">
+        <option value="vi">🇻🇳 Tiếng Việt</option>
+        <option value="en">🇬🇧 English</option>
+        <option value="zh">🇨🇳 中文</option>
+        <option value="th">🇹🇭 ไทย</option>
+      </select>
+    </div>
+    <main class="main-content">
+      <!-- HOME -->
+      <section class="section home-section" id="home">
+        <div class="profile-header">
+          <div class="profile-img">
+            <img src="images/avatar.jpg" alt="Hoàng Công Minh" />
+          </div>
+          <h1>
+            <span class="lang-vi">Tôi là </span>
+            <span class="lang-en" style="display: none">I am </span>
+            <span class="lang-zh" style="display: none">我是 </span>
+            <span class="lang-th" style="display: none">ผมคือ </span>
+            <span class="gradient-text" id="typing-name"></span>
+          </h1>
+          <div class="subtitle" id="typing-text"></div>
+          <div class="social-links">
+            <a href="https://github.com/minhhoangcong4" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="mailto:minhhoangcong4@gmail.com"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+            <a href="https://facebook.com/minh.hoang.01122005" target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="https://instagram.com/h.minhh05" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+          <div class="summary-text fade-in-up">
+            <span class="lang-vi">
+              Mình là sinh viên năm 2, đam mê lập trình web và công nghệ mới.
+              Mục tiêu trở thành lập trình viên front-end chuyên nghiệp, luôn
+              học hỏi sáng tạo và phát triển bản thân.
+            </span>
+            <span class="lang-en" style="display: none">
+              I am a second-year student, passionate about web programming and
+              new technologies. My goal is to become a professional front-end
+              developer, always learning, creating, and growing myself.
+            </span>
+            <span class="lang-zh" style="display: none">
+              我是大二学生，热爱网页编程和新技术。目标是成为专业的前端开发者，不断学习、创新与自我提升。
+            </span>
+            <span class="lang-th" style="display: none">
+              ผมเป็นนักศึกษาปี 2 ที่หลงใหลในการเขียนเว็บและเทคโนโลยีใหม่
+              เป้าหมายคือการเป็นโปรแกรมเมอร์ Front-end มืออาชีพ
+              ที่เรียนรู้และพัฒนาตนเองตลอดเวลา
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="section about-section" id="about">
+        <h2 class="section-title fade-in-left">
+          <span class="lang-vi">Giới thiệu</span>
+          <span class="lang-en" style="display: none">About</span>
+          <span class="lang-zh" style="display: none">介绍</span>
+          <span class="lang-th" style="display: none">แนะนำ</span>
+        </h2>
+        <div class="about-content fade-in-up">
+          <img
+            src="images/avatar.jpg"
+            alt="Hoàng Công Minh"
+            class="about-img"
+          />
+          <p>
+            <span class="lang-vi">
+              Xin chào! Mình là <b>Hoàng Công Minh</b>, hiện là sinh viên năm 2
+              ngành Công nghệ Thông tin tại Đại học Giao thông vận tải (UTH).
+              Mình đam mê công nghệ, đặc biệt là lập trình web và phát triển
+              phần mềm.
+            </span>
+            <span class="lang-en" style="display: none">
+              Hello! I'm <b>Hoang Cong Minh</b>, a second-year student majoring
+              in Information Technology at the University of Transport (UTH). I
+              have a strong passion for technology, especially web development
+              and software engineering.
+            </span>
+            <span class="lang-zh" style="display: none">
+              你好！我是<b>Hoang Cong Minh</b
+              >，目前是交通大学（UTH）信息技术二年级的学生。我热爱科技，尤其是网页开发和软件开发。
+            </span>
+            <span class="lang-th" style="display: none">
+              สวัสดี! ผมคือ <b>Hoang Cong Minh</b> นักศึกษาชั้นปีที่ 2
+              สาขาเทคโนโลยีสารสนเทศ มหาวิทยาลัยการคมนาคม (UTH)
+              มีความหลงใหลด้านเทคโนโลยี โดยเฉพาะเว็บและซอฟต์แวร์
+            </span>
+          </p>
+          <p>
+            <span class="lang-vi">
+              Trong quá trình học, mình luôn chú trọng tự học, rèn luyện kỹ năng
+              giải quyết vấn đề và tư duy logic. Mình thích làm việc nhóm, sẵn
+              sàng hỗ trợ bạn bè cùng tiến bộ.
+            </span>
+            <span class="lang-en" style="display: none">
+              During my studies, I always focus on self-learning,
+              problem-solving skills, and logical thinking. I enjoy teamwork and
+              am always willing to support my friends to improve together.
+            </span>
+            <span class="lang-zh" style="display: none">
+              在学习过程中，我注重自学、培养解决问题的能力和逻辑思维。我喜欢团队合作，总是乐于帮助朋友们共同进步。
+            </span>
+            <span class="lang-th" style="display: none">
+              ตลอดการเรียน ผมเน้นการเรียนรู้ด้วยตนเอง ฝึกทักษะการแก้ปัญหา
+              และพัฒนาความคิดเชิงตรรกะ รักการทำงานเป็นทีม
+              และพร้อมช่วยเพื่อนร่วมงานเสมอ
+            </span>
+          </p>
+          <p>
+            <span class="lang-vi">
+              Thế mạnh của mình là kiên trì, chủ động và khả năng tự nghiên cứu.
+              Hiện mình đang tập trung nâng cao các kỹ năng Front-end (HTML,
+              CSS, JavaScript, ReactJS).
+            </span>
+            <span class="lang-en" style="display: none">
+              My strengths are perseverance, proactivity, and self-research
+              ability. Currently, I am focusing on improving Front-end skills
+              (HTML, CSS, JavaScript, ReactJS).
+            </span>
+            <span class="lang-zh" style="display: none">
+              我的优势是坚持不懈、主动性强和自学能力。目前我专注于提升前端技能（HTML、CSS、JavaScript、ReactJS）。
+            </span>
+            <span class="lang-th" style="display: none">
+              จุดแข็งของผมคือความอดทน ความกระตือรือร้น และการค้นคว้าด้วยตนเอง
+              ขณะนี้กำลังพัฒนาทักษะ Front-end (HTML, CSS, JavaScript, ReactJS)
+            </span>
+          </p>
+          <p>
+            <span class="lang-vi">
+              Định hướng của mình là trở thành lập trình viên chuyên nghiệp, tạo
+              ra sản phẩm hữu ích cho cộng đồng và phát triển cả kỹ năng chuyên
+              môn lẫn kỹ năng mềm.
+            </span>
+            <span class="lang-en" style="display: none">
+              My goal is to become a professional developer, create useful
+              products for the community, and develop both technical and soft
+              skills.
+            </span>
+            <span class="lang-zh" style="display: none">
+              我的目标是成为一名专业的开发者，创造有益于社区的产品，同时提升技术与软技能。
+            </span>
+            <span class="lang-th" style="display: none">
+              เป้าหมายของผมคือการเป็นนักพัฒนามืออาชีพ สร้างสรรค์สิ่งดีๆ ให้สังคม
+              และพัฒนาทั้งทักษะวิชาชีพและทักษะชีวิต
+            </span>
+          </p>
+          <ul>
+            <li>
+              <span class="lang-vi"><b>Tuổi:</b> 20</span>
+              <span class="lang-en" style="display: none"><b>Age:</b> 20</span>
+              <span class="lang-zh" style="display: none"
+                ><b>年龄：</b>20岁</span
+              >
+              <span class="lang-th" style="display: none"><b>อายุ:</b> 20</span>
+            </li>
+            <li>
+              <span class="lang-vi"><b>Địa chỉ:</b> TP. Hồ Chí Minh</span>
+              <span class="lang-en" style="display: none"
+                ><b>Address:</b> Ho Chi Minh City</span
+              >
+              <span class="lang-zh" style="display: none"
+                ><b>地址：</b>胡志明市</span
+              >
+              <span class="lang-th" style="display: none"
+                ><b>ที่อยู่:</b> โฮจิมินห์ซิตี้</span
+              >
+            </li>
+            <li>
+              <span class="lang-vi"
+                ><b>Email:</b> minhhoangcong4@gmail.com</span
+              >
+              <span class="lang-en" style="display: none"
+                ><b>Email:</b> minhhoangcong4@gmail.com</span
+              >
+              <span class="lang-zh" style="display: none"
+                ><b>邮箱：</b>minhhoangcong4@gmail.com</span
+              >
+              <span class="lang-th" style="display: none"
+                ><b>อีเมล:</b> minhhoangcong4@gmail.com</span
+              >
+            </li>
+          </ul>
+          <blockquote>
+            <span class="lang-vi"
+              >Sống hết mình, học hỏi không ngừng và luôn dám thử thách bản
+              thân!</span
+            >
+            <span class="lang-en" style="display: none"
+              >Live to the fullest, keep learning, and always dare to challenge
+              yourself!</span
+            >
+            <span class="lang-zh" style="display: none"
+              >全力以赴，持续学习，勇于挑战自我！</span
+            >
+            <span class="lang-th" style="display: none"
+              >ใช้ชีวิตให้สุด เรียนรู้อย่างไม่หยุดนิ่ง
+              และกล้าท้าทายตัวเอง!</span
+            >
+          </blockquote>
+        </div>
+      </section>
+
+      <!-- CAREER GOALS -->
+      <section class="section career-section" id="career">
+        <h2 class="section-title fade-in-left">
+          <span class="lang-vi">Mục tiêu nghề nghiệp</span>
+          <span class="lang-en" style="display: none">Career Goals</span>
+          <span class="lang-zh" style="display: none">职业目标</span>
+          <span class="lang-th" style="display: none">เป้าหมายอาชีพ</span>
+        </h2>
+        <div class="info-grid fade-in-up">
+          <div class="info-item">
+            <strong>
+              <i class="fa-solid fa-laptop-code"></i>
+              <span class="lang-vi">Front-end Developer</span>
+              <span class="lang-en" style="display: none"
+                >Front-end Developer</span
+              >
+              <span class="lang-zh" style="display: none">前端开发者</span>
+              <span class="lang-th" style="display: none"
+                >นักพัฒนา Front-end</span
+              >
+            </strong>
+            <span class="lang-vi"
+              >Chinh phục vị trí Front-end chuyên nghiệp, làm chủ HTML, CSS,
+              JavaScript, ReactJS.</span
+            >
+            <span class="lang-en" style="display: none"
+              >Master Front-end development: HTML, CSS, JavaScript,
+              ReactJS.</span
+            >
+            <span class="lang-zh" style="display: none"
+              >精通前端开发，熟练掌握HTML、CSS、JavaScript、ReactJS。</span
+            >
+            <span class="lang-th" style="display: none"
+              >เชี่ยวชาญ Front-end HTML, CSS, JavaScript, ReactJS</span
+            >
+          </div>
+          <div class="info-item">
+            <strong>
+              <i class="fa-solid fa-lightbulb"></i>
+              <span class="lang-vi">Sáng tạo</span>
+              <span class="lang-en" style="display: none">Creativity</span>
+              <span class="lang-zh" style="display: none">创新</span>
+              <span class="lang-th" style="display: none"
+                >ความคิดสร้างสรรค์</span
+              >
+            </strong>
+            <span class="lang-vi"
+              >Áp dụng công nghệ mới, thiết kế giao diện đẹp, tối ưu trải nghiệm
+              người dùng.</span
+            >
+            <span class="lang-en" style="display: none"
+              >Apply new technologies, design beautiful interfaces, and optimize
+              user experience.</span
+            >
+            <span class="lang-zh" style="display: none"
+              >应用新技术，设计美观界面，优化用户体验。</span
+            >
+            <span class="lang-th" style="display: none"
+              >นำเทคโนโลยีใหม่ๆ มาใช้ ออกแบบ UI/UX ที่ดี</span
+            >
+          </div>
+          <div class="info-item">
+            <strong>
+              <i class="fa-solid fa-users"></i>
+              <span class="lang-vi">Học hỏi teamwork</span>
+              <span class="lang-en" style="display: none">Teamwork</span>
+              <span class="lang-zh" style="display: none">团队协作</span>
+              <span class="lang-th" style="display: none">ทำงานเป็นทีม</span>
+            </strong>
+            <span class="lang-vi"
+              >Phát triển kỹ năng teamwork, giao tiếp chuyên nghiệp, giải quyết
+              vấn đề thực tế.</span
+            >
+            <span class="lang-en" style="display: none"
+              >Develop teamwork, professional communication, and real-world
+              problem-solving skills.</span
+            >
+            <span class="lang-zh" style="display: none"
+              >提升团队协作、专业沟通与实际问题解决能力。</span
+            >
+            <span class="lang-th" style="display: none"
+              >พัฒนาทักษะการทำงานร่วมกัน และการสื่อสาร</span
+            >
+          </div>
+        </div>
+
+        <h2 class="section-title fade-in-left">
+          <span class="lang-vi">Sở thích</span>
+          <span class="lang-en" style="display: none">Hobbies</span>
+          <span class="lang-zh" style="display: none">兴趣爱好</span>
+          <span class="lang-th" style="display: none">งานอดิเรก</span>
+        </h2>
+        <div class="info-grid fade-in-up">
+          <div class="info-item">
+            <strong>
+              <i class="fa-solid fa-gamepad"></i>
+              <span class="lang-vi">Chơi game</span>
+              <span class="lang-en" style="display: none">Gaming</span>
+              <span class="lang-zh" style="display: none">玩游戏</span>
+              <span class="lang-th" style="display: none">เล่นเกม</span>
+            </strong>
+            <span class="lang-vi"
+              >Giải trí, luyện phản xạ và tăng sáng tạo.</span
+            >
+            <span class="lang-en" style="display: none"
+              >Relax, improve reflexes, boost creativity.</span
+            >
+            <span class="lang-zh" style="display: none"
+              >娱乐、锻炼反应力、提升创造力。</span
+            >
+            <span class="lang-th" style="display: none"
+              >ผ่อนคลาย พัฒนาทักษะคิดและสร้างสรรค์</span
+            >
+          </div>
+          <div class="info-item">
+            <strong>
+              <i class="fa-solid fa-music"></i>
+              <span class="lang-vi">Nghe nhạc</span>
+              <span class="lang-en" style="display: none"
+                >Listening to Music</span
+              >
+              <span class="lang-zh" style="display: none">听音乐</span>
+              <span class="lang-th" style="display: none">ฟังเพลง</span>
+            </strong>
+            <span class="lang-vi">Thư giãn và lấy cảm hứng học tập.</span>
+            <span class="lang-en" style="display: none"
+              >Relax and get study inspiration.</span
+            >
+            <span class="lang-zh" style="display: none"
+              >放松身心，获得学习灵感。</span
+            >
+            <span class="lang-th" style="display: none"
+              >ผ่อนคลาย สร้างแรงบันดาลใจ</span
+            >
+          </div>
+          <div class="info-item">
+            <strong>
+              <i class="fa-solid fa-book"></i>
+              <span class="lang-vi">Đọc sách công nghệ</span>
+              <span class="lang-en" style="display: none"
+                >Reading tech books</span
+              >
+              <span class="lang-zh" style="display: none">阅读科技书籍</span>
+              <span class="lang-th" style="display: none"
+                >อ่านหนังสือเทคโนโลยี</span
+              >
+            </strong>
+            <span class="lang-vi">Cập nhật xu hướng mới, nâng cao tư duy.</span>
+            <span class="lang-en" style="display: none"
+              >Stay updated with new trends, improve thinking.</span
+            >
+            <span class="lang-zh" style="display: none"
+              >了解最新趋势，提升思维能力。</span
+            >
+            <span class="lang-th" style="display: none"
+              >อัปเดตเทรนด์ใหม่ๆ พัฒนาความคิด</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="section skills-section" id="skills">
+        <h2 class="section-title fade-in-left">
+          <span class="lang-vi">Kỹ năng</span>
+          <span class="lang-en" style="display: none">Skills</span>
+          <span class="lang-zh" style="display: none">技能</span>
+          <span class="lang-th" style="display: none">ทักษะ</span>
+        </h2>
+        <div class="skills-container fade-in-up">
+          <div class="skill-category">
+            <h3>
+              <i class="fa-solid fa-code"></i>
+              <span class="lang-vi">Ngôn ngữ lập trình</span>
+              <span class="lang-en" style="display: none"
+                >Programming Languages</span
+              >
+              <span class="lang-zh" style="display: none">编程语言</span>
+              <span class="lang-th" style="display: none">ภาษาโปรแกรม</span>
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Python</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-item">
+                <div class="skill-progress-label">
+                  <span>HTML</span><span>90%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" data-percent="90"></div>
+                </div>
+              </div>
+              <div class="skill-progress-item">
+                <div class="skill-progress-label">
+                  <span>CSS</span><span>85%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" data-percent="85"></div>
+                </div>
+              </div>
+              <div class="skill-progress-item">
+                <div class="skill-progress-label">
+                  <span>JavaScript</span><span>75%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" data-percent="75"></div>
+                </div>
+              </div>
+              <div class="skill-progress-item">
+                <div class="skill-progress-label">
+                  <span>Python</span><span>70%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" data-percent="70"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>
+              <i class="fa-solid fa-laptop-code"></i>
+              <span class="lang-vi">Công cụ & Framework</span>
+              <span class="lang-en" style="display: none"
+                >Tools & Frameworks</span
+              >
+              <span class="lang-zh" style="display: none">工具和框架</span>
+              <span class="lang-th" style="display: none"
+                >เครื่องมือและเฟรมเวิร์ก</span
+              >
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">ReactJS</span>
+              <span class="skill-tag">VS Code</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-item">
+                <div class="skill-progress-label">
+                  <span>ReactJS</span><span>60%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" data-percent="60"></div>
+                </div>
+              </div>
+              <div class="skill-progress-item">
+                <div class="skill-progress-label">
+                  <span>Git</span><span>70%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" data-percent="70"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>
+              <i class="fa-solid fa-users"></i>
+              <span class="lang-vi">Kỹ năng mềm</span>
+              <span class="lang-en" style="display: none">Soft Skills</span>
+              <span class="lang-zh" style="display: none">软技能</span>
+              <span class="lang-th" style="display: none">ทักษะชีวิต</span>
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag">
+                <span class="lang-vi">Làm việc nhóm</span>
+                <span class="lang-en" style="display: none">Teamwork</span>
+                <span class="lang-zh" style="display: none">团队协作</span>
+                <span class="lang-th" style="display: none"
+                  >การทำงานเป็นทีม</span
+                >
+              </span>
+              <span class="skill-tag">
+                <span class="lang-vi">Tư duy logic</span>
+                <span class="lang-en" style="display: none"
+                  >Logical Thinking</span
+                >
+                <span class="lang-zh" style="display: none">逻辑思维</span>
+                <span class="lang-th" style="display: none"
+                  >ความคิดเชิงตรรกะ</span
+                >
+              </span>
+              <span class="skill-tag">
+                <span class="lang-vi">Giao tiếp</span>
+                <span class="lang-en" style="display: none">Communication</span>
+                <span class="lang-zh" style="display: none">沟通</span>
+                <span class="lang-th" style="display: none">การสื่อสาร</span>
+              </span>
+              <span class="skill-tag">
+                <span class="lang-vi">Tự học</span>
+                <span class="lang-en" style="display: none">Self-learning</span>
+                <span class="lang-zh" style="display: none">自学</span>
+                <span class="lang-th" style="display: none"
+                  >การเรียนรู้ด้วยตนเอง</span
+                >
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section class="section education-section" id="education">
+        <h2 class="section-title fade-in-left">
+          <span class="lang-vi">Học vấn</span>
+          <span class="lang-en" style="display: none">Education</span>
+          <span class="lang-zh" style="display: none">学历</span>
+          <span class="lang-th" style="display: none">การศึกษา</span>
+        </h2>
+        <div class="education-item fade-in-up">
+          <h3>
+            <span class="lang-vi">Cử nhân Công nghệ Thông tin</span>
+            <span class="lang-en" style="display: none"
+              >Bachelor of Information Technology</span
+            >
+            <span class="lang-zh" style="display: none">信息技术学士</span>
+            <span class="lang-th" style="display: none"
+              >ปริญญาตรีเทคโนโลยีสารสนเทศ</span
+            >
+          </h3>
+          <div class="school">
+            <span class="lang-vi">Đại học Giao thông Vận tải TP.HCM (UTH)</span>
+            <span class="lang-en" style="display: none"
+              >University of Transport Ho Chi Minh City (UTH)</span
+            >
+            <span class="lang-zh" style="display: none"
+              >胡志明市交通大学（UTH）</span
+            >
+            <span class="lang-th" style="display: none"
+              >มหาวิทยาลัยการคมนาคม โฮจิมินห์ (UTH)</span
+            >
+          </div>
+          <div class="date">2023 - Nay</div>
+          <ul>
+            <li>
+              <span class="lang-vi">GPA hiện tại: 3.5/4</span>
+              <span class="lang-en" style="display: none"
+                >Current GPA: 3.5/4</span
+              >
+              <span class="lang-zh" style="display: none">当前绩点：3.5/4</span>
+              <span class="lang-th" style="display: none"
+                >GPA ปัจจุบัน: 3.5/4</span
+              >
+            </li>
+            <li>
+              <span class="lang-vi"
+                >Thành viên CLB IT UTH, hoạt động workshop web</span
+              >
+              <span class="lang-en" style="display: none"
+                >Member of UTH IT Club, participated in web workshops</span
+              >
+              <span class="lang-zh" style="display: none"
+                >UTH IT俱乐部成员，参与网页研讨会</span
+              >
+              <span class="lang-th" style="display: none"
+                >สมาชิกชมรม IT UTH และร่วมกิจกรรมเวิร์กช็อปเว็บ</span
+              >
+            </li>
+            <li>
+              <span class="lang-vi"
+                >Môn nổi bật: Lập trình Web, Cơ sở dữ liệu, Nhập môn AI</span
+              >
+              <span class="lang-en" style="display: none"
+                >Outstanding courses: Web Programming, Database, Introduction to
+                AI</span
+              >
+              <span class="lang-zh" style="display: none"
+                >主要课程：网页编程、数据库、人工智能入门</span
+              >
+              <span class="lang-th" style="display: none"
+                >วิชาสำคัญ: การเขียนเว็บ ฐานข้อมูล AI เบื้องต้น</span
+              >
+            </li>
+          </ul>
+        </div>
+        <h3 class="section-title fade-in-left" style="font-size: 1.8em">
+          <span class="lang-vi">Chứng chỉ & Khóa học</span>
+          <span class="lang-en" style="display: none"
+            >Certificates & Courses</span
+          >
+          <span class="lang-zh" style="display: none">证书与课程</span>
+          <span class="lang-th" style="display: none"
+            >ประกาศนียบัตรและคอร์ส</span
+          >
+        </h3>
+        <div class="education-item fade-in-up">
+          <h4>
+            <span class="lang-vi">Lập trình Python cơ bản</span>
+            <span class="lang-en" style="display: none"
+              >Basic Python Programming</span
+            >
+            <span class="lang-zh" style="display: none">Python编程基础</span>
+            <span class="lang-th" style="display: none"
+              >การเขียนโปรแกรม Python เบื้องต้น</span
+            >
+          </h4>
+          <div class="school">
+            <span class="lang-vi">Coursera – Đại học Michigan</span>
+            <span class="lang-en" style="display: none"
+              >Coursera – University of Michigan</span
+            >
+            <span class="lang-zh" style="display: none"
+              >Coursera – 密歇根大学</span
+            >
+            <span class="lang-th" style="display: none"
+              >Coursera – มหาวิทยาลัยมิชิแกน</span
+            >
+          </div>
+          <div class="date">2023</div>
+          <p>
+            <span class="lang-vi"
+              >Đã hoàn thành. Ứng dụng Python xử lý dữ liệu và lập trình web cơ
+              bản.</span
+            >
+            <span class="lang-en" style="display: none"
+              >Completed. Applied Python for data processing and basic web
+              programming.</span
+            >
+            <span class="lang-zh" style="display: none"
+              >已完成。使用Python进行数据处理和基础网页编程。</span
+            >
+            <span class="lang-th" style="display: none"
+              >สำเร็จแล้ว ประยุกต์ใช้ Python
+              กับการประมวลผลข้อมูลและเว็บเบื้องต้น</span
+            >
+          </p>
+        </div>
+        <div class="education-item fade-in-up">
+          <h4>
+            <span class="lang-vi">HTML, CSS, JavaScript</span>
+            <span class="lang-en" style="display: none"
+              >HTML, CSS, JavaScript</span
+            >
+            <span class="lang-zh" style="display: none"
+              >HTML、CSS、JavaScript</span
+            >
+            <span class="lang-th" style="display: none"
+              >HTML, CSS, JavaScript</span
+            >
+          </h4>
+          <div class="school">
+            <span class="lang-vi">freeCodeCamp</span>
+            <span class="lang-en" style="display: none">freeCodeCamp</span>
+            <span class="lang-zh" style="display: none">freeCodeCamp</span>
+            <span class="lang-th" style="display: none">freeCodeCamp</span>
+          </div>
+          <div class="date">2023</div>
+          <p>
+            <span class="lang-vi"
+              >Đã hoàn thành. Xây dựng giao diện web, hiệu ứng JavaScript cơ
+              bản.</span
+            >
+            <span class="lang-en" style="display: none"
+              >Completed. Built web interfaces, basic JavaScript effects.</span
+            >
+            <span class="lang-zh" style="display: none"
+              >已完成。搭建网页界面，基本JavaScript效果。</span
+            >
+            <span class="lang-th" style="display: none"
+              >สำเร็จแล้ว สร้างหน้าเว็บและ JavaScript effect พื้นฐาน</span
+            >
+          </p>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="section projects-section" id="projects">
+        <h2 class="section-title fade-in-left">
+          <span class="lang-vi">Dự án cá nhân</span>
+          <span class="lang-en" style="display: none">Personal Projects</span>
+          <span class="lang-zh" style="display: none">个人项目</span>
+          <span class="lang-th" style="display: none">โปรเจกต์ส่วนตัว</span>
+        </h2>
+        <div class="project-item fade-in-up">
+          <img
+            src="images/project1.png"
+            alt="Game Clumsy Bird"
+            class="project-img"
+          />
+          <div>
+            <h3>Clumsy Bird Game</h3>
+            <div class="project-link">
+              <i class="fab fa-github"></i>
+              <a
+                href="https://github.com/minhhoang0112/clumsy-bird-minh"
+                target="_blank"
+                >github.com/minhhoang0112/clumsy-bird-minh</a
+              >
+            </div>
+            <p>
+              <span class="lang-vi"
+                >Trò chơi Clumsy Bird – giải trí, luyện phản xạ. Code thuần
+                HTML, CSS, JavaScript.</span
+              >
+              <span class="lang-en" style="display: none"
+                >Clumsy Bird game – fun, improves reflexes. Built with HTML,
+                CSS, JavaScript.</span
+              >
+              <span class="lang-zh" style="display: none"
+                >Clumsy
+                Bird游戏——娱乐、锻炼反应力。纯HTML、CSS、JavaScript编写。</span
+              >
+              <span class="lang-th" style="display: none"
+                >เกม Clumsy Bird – สนุก ฝึกการตอบสนอง สร้างด้วย HTML, CSS,
+                JavaScript</span
+              >
+            </p>
+            <div class="skill-tags">
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-item fade-in-up">
+          <img
+            src="images/project3.png"
+            alt="Portfolio cá nhân"
+            class="project-img"
+          />
+          <div>
+            <h3>
+              <span class="lang-vi">Portfolio cá nhân</span>
+              <span class="lang-en" style="display: none"
+                >Personal Portfolio</span
+              >
+              <span class="lang-zh" style="display: none">个人作品集</span>
+              <span class="lang-th" style="display: none"
+                >Portfolio ส่วนตัว</span
+              >
+            </h3>
+            <div class="project-link">
+              <i class="fab fa-github"></i>
+              <a href="#">Đang xem / Viewing</a>
+            </div>
+            <p>
+              <span class="lang-vi"
+                >Website giới thiệu bản thân, responsive, hiệu ứng cuộn trang
+                mượt mà.</span
+              >
+              <span class="lang-en" style="display: none"
+                >Personal website, responsive, smooth scroll effects.</span
+              >
+              <span class="lang-zh" style="display: none"
+                >个人网站，自适应布局，平滑滚动特效。</span
+              >
+              <span class="lang-th" style="display: none"
+                >เว็บไซต์แนะนำตัวเอง รองรับมือถือ เอฟเฟกต์เลื่อนหน้า</span
+              >
+            </p>
+            <div class="skill-tags">
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section contact-section" id="contact">
+        <h2 class="section-title fade-in-left">
+          <span class="lang-vi">Liên hệ</span>
+          <span class="lang-en" style="display: none">Contact</span>
+          <span class="lang-zh" style="display: none">联系</span>
+          <span class="lang-th" style="display: none">ติดต่อ</span>
+        </h2>
+        <div class="contact-container fade-in-up">
+          <div class="contact-info-row">
+            <a class="contact-item" href="mailto:minhhoangcong4@gmail.com">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <div class="contact-label">
+                  <span class="lang-vi">Email</span>
+                  <span class="lang-en" style="display: none">Email</span>
+                  <span class="lang-zh" style="display: none">邮箱</span>
+                  <span class="lang-th" style="display: none">อีเมล</span>
+                </div>
+                <div class="contact-value">minhhoangcong4@gmail.com</div>
+              </div>
+            </a>
+            <a
+              class="contact-item"
+              href="https://facebook.com/minh.hoang.01122005"
+              target="_blank"
+            >
+              <i class="fa-brands fa-facebook"></i>
+              <div>
+                <div class="contact-label">
+                  <span class="lang-vi">Facebook</span>
+                  <span class="lang-en" style="display: none">Facebook</span>
+                  <span class="lang-zh" style="display: none">脸书</span>
+                  <span class="lang-th" style="display: none">เฟซบุ๊ก</span>
+                </div>
+                <div class="contact-value">Minh Hoàng</div>
+              </div>
+            </a>
+            <a class="contact-item" href="tel:0974660736">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <div class="contact-label">
+                  <span class="lang-vi">Điện thoại</span>
+                  <span class="lang-en" style="display: none">Phone</span>
+                  <span class="lang-zh" style="display: none">电话</span>
+                  <span class="lang-th" style="display: none">โทรศัพท์</span>
+                </div>
+                <div class="contact-value">0974 660 736</div>
+              </div>
+            </a>
+            <a
+              class="contact-item"
+              href="https://instagram.com/h.minhh05"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+              <div>
+                <div class="contact-label">
+                  <span class="lang-vi">Instagram</span>
+                  <span class="lang-en" style="display: none">Instagram</span>
+                  <span class="lang-zh" style="display: none">Instagram</span>
+                  <span class="lang-th" style="display: none">อินสตาแกรม</span>
+                </div>
+                <div class="contact-value">h.minhh05</div>
+              </div>
+            </a>
+          </div>
+          <form
+            class="contact-form fade-in-up"
+            id="contactForm"
+            autocomplete="off"
+          >
+            <input
+              type="text"
+              id="nameInput"
+              required
+              placeholder="Họ và tên"
+              data-placeholder-vi="Họ và tên"
+              data-placeholder-en="Full name"
+              data-placeholder-zh="姓名"
+              data-placeholder-th="ชื่อ-นามสกุล"
+            />
+            <input
+              type="email"
+              id="emailInput"
+              required
+              placeholder="Email"
+              data-placeholder-vi="Email"
+              data-placeholder-en="Email"
+              data-placeholder-zh="邮箱"
+              data-placeholder-th="อีเมล"
+            />
+            <input
+              type="text"
+              id="subjectInput"
+              placeholder="Chủ đề"
+              data-placeholder-vi="Chủ đề"
+              data-placeholder-en="Subject"
+              data-placeholder-zh="主题"
+              data-placeholder-th="หัวข้อ"
+            />
+            <textarea
+              rows="4"
+              required
+              id="messageInput"
+              placeholder="Nội dung liên hệ"
+              data-placeholder-vi="Nội dung liên hệ"
+              data-placeholder-en="Message"
+              data-placeholder-zh="联系内容"
+              data-placeholder-th="เนื้อหาติดต่อ"
+            ></textarea>
+            <button
+              type="submit"
+              id="formBtn"
+              data-label-vi="Gửi"
+              data-label-en="Send"
+              data-label-zh="发送"
+              data-label-th="ส่ง"
+            >
+              Gửi
+            </button>
+            <p id="formMessage" class="form-message"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <a class="fab" href="#" onclick="scrollToTop()">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+    <script src="js/script.js"></script>
+  </body>
+</html>
