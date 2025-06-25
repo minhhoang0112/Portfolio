@@ -17,7 +17,7 @@ Xem trực tiếp: [https://minhhoang0112.github.io/Portfolio/](https://minhhoan
 
 ## 📂 Cấu trúc thư mục
 
-Portfolio-cv/
+<pre> ```plaintextPortfolio-cv/
 │
 ├── css/
 │ └── style.css # File CSS chính
