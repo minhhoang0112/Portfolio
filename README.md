@@ -17,7 +17,7 @@ Xem trực tiếp: [https://minhhoang0112.github.io/Portfolio/](https://minhhoan
 
 ## 📂 Cấu trúc thư mục
 
-<pre> ```plaintextPortfolio-cv/
+<pre> ```plaintext Portfolio-cv/
 │
 ├── css/
 │ └── style.css # File CSS chính
@@ -26,6 +26,7 @@ Xem trực tiếp: [https://minhhoang0112.github.io/Portfolio/](https://minhhoan
 │ └── script.js # File JavaScript cho hiệu ứng và đa ngôn ngữ
 ├── index.html # Trang web chính
 └── README.md # File mô tả dự án (README)
+``` </pre>
 
 ## 🖥️ Công nghệ sử dụng
 
