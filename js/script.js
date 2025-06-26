@@ -277,8 +277,8 @@ window.addEventListener("DOMContentLoaded", function () {
         y: Math.random() * h,
         r: 0.5 + Math.random() * 1.5,
         alpha: Math.random() * 0.7 + 0.3,
-        dx: (Math.random() - 0.5) * 0.05,
-        dy: (Math.random() - 0.5) * 0.05,
+        dx: (Math.random() - 0.5) * 1.05,
+        dy: (Math.random() - 0.5) * 1.05,
         twinkle: 0.006 + Math.random() * 0.01,
       });
     }
