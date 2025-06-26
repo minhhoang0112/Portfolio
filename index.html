@@ -10,6 +10,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
@@ -832,7 +837,7 @@
         </div>
       </section>
 
-      <!-- CONTACT -->
+      <!-- CONTACT SECTION -->
       <section class="section contact-section" id="contact">
         <h2 class="section-title fade-in-left">
           <span class="lang-vi">Liên hệ</span>
@@ -840,70 +845,68 @@
           <span class="lang-zh" style="display: none">联系</span>
           <span class="lang-th" style="display: none">ติดต่อ</span>
         </h2>
-        <div class="contact-container fade-in-up">
-          <div class="contact-info-row">
-            <a class="contact-item" href="mailto:minhhoangcong4@gmail.com">
-              <i class="fa-solid fa-envelope"></i>
-              <div>
-                <div class="contact-label">
-                  <span class="lang-vi">Email</span>
-                  <span class="lang-en" style="display: none">Email</span>
-                  <span class="lang-zh" style="display: none">邮箱</span>
-                  <span class="lang-th" style="display: none">อีเมล</span>
-                </div>
-                <div class="contact-value">minhhoangcong4@gmail.com</div>
-              </div>
-            </a>
-            <a
-              class="contact-item"
-              href="https://facebook.com/minh.hoang.01122005"
-              target="_blank"
-            >
-              <i class="fa-brands fa-facebook"></i>
-              <div>
-                <div class="contact-label">
-                  <span class="lang-vi">Facebook</span>
-                  <span class="lang-en" style="display: none">Facebook</span>
-                  <span class="lang-zh" style="display: none">脸书</span>
-                  <span class="lang-th" style="display: none">เฟซบุ๊ก</span>
-                </div>
-                <div class="contact-value">Minh Hoàng</div>
-              </div>
-            </a>
-            <a class="contact-item" href="tel:0974660736">
-              <i class="fa-solid fa-phone"></i>
-              <div>
-                <div class="contact-label">
-                  <span class="lang-vi">Điện thoại</span>
-                  <span class="lang-en" style="display: none">Phone</span>
-                  <span class="lang-zh" style="display: none">电话</span>
-                  <span class="lang-th" style="display: none">โทรศัพท์</span>
-                </div>
-                <div class="contact-value">0974 660 736</div>
-              </div>
-            </a>
-            <a
-              class="contact-item"
-              href="https://instagram.com/h.minhh05"
-              target="_blank"
-            >
-              <i class="fa-brands fa-instagram"></i>
-              <div>
-                <div class="contact-label">
-                  <span class="lang-vi">Instagram</span>
-                  <span class="lang-en" style="display: none">Instagram</span>
-                  <span class="lang-zh" style="display: none">Instagram</span>
-                  <span class="lang-th" style="display: none">อินสตาแกรม</span>
-                </div>
-                <div class="contact-value">h.minhh05</div>
-              </div>
-            </a>
+        <div class="contact-grid">
+          <!-- Thông tin liên hệ bên trái -->
+          <div class="contact-left">
+            <p class="contact-desc lang-vi">
+              Nếu bạn có bất kỳ câu hỏi, góp ý hay cơ hội hợp tác nào, hãy gửi
+              cho mình thông tin qua form bên cạnh hoặc email, số điện thoại bên
+              dưới.
+            </p>
+            <p class="contact-desc lang-en" style="display: none">
+              If you have any questions, suggestions, or collaboration
+              opportunities,<br />
+              feel free to send me your info via the form or contact me below!
+            </p>
+            <p class="contact-desc lang-zh" style="display: none">
+              如有任何问题、建议或合作机会，欢迎通过表单或以下联系方式联系我！
+            </p>
+            <p class="contact-desc lang-th" style="display: none">
+              หากคุณมีคำถาม ข้อเสนอแนะ หรือโอกาสในการร่วมงาน<br />
+              สามารถติดต่อผ่านฟอร์มหรือข้อมูลด้านล่างได้เลย!
+            </p>
+            <ul class="contact-info-list">
+              <li>
+                <i class="fa-solid fa-user"></i>
+                <span>Hoàng Công Minh</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <span class="lang-vi">TP. Hồ Chí Minh</span>
+                <span class="lang-en" style="display: none"
+                  >Ho Chi Minh City</span
+                >
+                <span class="lang-zh" style="display: none">胡志明市</span>
+                <span class="lang-th" style="display: none"
+                  >โฮจิมินห์ซิตี้</span
+                >
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                <span>minhhoangcong4@gmail.com</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-phone"></i>
+                <span>0974 660 736</span>
+              </li>
+            </ul>
+            <div class="contact-socials">
+              <a
+                href="https://facebook.com/minh.hoang.01122005"
+                target="_blank"
+                title="Facebook"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                href="https://instagram.com/h.minhh05"
+                target="_blank"
+                title="Instagram"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
           </div>
-          <form
-            class="contact-form fade-in-up"
-            id="contactForm"
-            autocomplete="off"
-          >
+          <!-- Form liên hệ bên phải -->
+          <form class="contact-form" id="contactForm" autocomplete="off">
             <input
               type="text"
               id="nameInput"
