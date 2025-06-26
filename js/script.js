@@ -315,3 +315,6 @@ window.addEventListener("DOMContentLoaded", function () {
   }
   drawStars();
 });
+document.getElementById("toTopBtn").onclick = function () {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};

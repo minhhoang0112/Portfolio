@@ -1324,3 +1324,75 @@ html {
     border-radius: 16px;
   }
 }
+/* Footer  */
+.footer {
+  background: #00bfae;
+  color: #fff;
+  text-align: center;
+  padding: 25px 0 17px 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  flex-shrink: 0;
+  z-index: 2;
+  position: relative;
+}
+
+.footer-content {
+  width: 100%;
+  text-align: left;
+  font-family: "Montserrat", Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 40px;
+  position: relative;
+  padding-left: 6vw;
+}
+
+/* Nút scroll to top ở footer */
+.footer-to-top {
+  position: absolute;
+  right: 8vw;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  color: #00bfae;
+  border: none;
+  border-radius: 18px;
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 12px #0003;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: background 0.22s, color 0.22s, box-shadow 0.22s, transform 0.15s;
+  outline: none;
+  z-index: 12;
+}
+.footer-to-top:hover {
+  background: #01fff4;
+  color: #093d45;
+  box-shadow: 0 6px 28px #00fff430;
+  transform: translateY(-50%) scale(1.08);
+}
+.footer-to-top i {
+  font-size: 2rem;
+  pointer-events: none;
+}
+
+/* Responsive cho mobile */
+@media (max-width: 700px) {
+  .footer-content {
+    font-size: 1.04rem;
+    min-height: 28px;
+  }
+  .footer-to-top {
+    width: 40px;
+    height: 40px;
+    font-size: 1.25rem;
+    right: 4vw;
+  }
+}
