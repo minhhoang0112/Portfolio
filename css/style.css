@@ -89,8 +89,8 @@ html {
 }
 
 .section {
-  scroll-margin-top: 90px;
-  padding: 20px 0 40px 0;
+  scroll-margin-top: 88px;
+  padding: 15px 0 36px 0;
   width: 100vw;
   min-height: 80vh;
   display: flex;
@@ -283,7 +283,7 @@ html {
 .section-title {
   color: var(--color-accent);
   font-size: 3rem;
-  margin: 32px 0 40px 0;
+  margin: 15px 0 30px 0;
   font-weight: 800;
   letter-spacing: 2px;
   text-shadow: 0 0 20px #00fff8bb;
@@ -1135,4 +1135,139 @@ html {
   pointer-events: none;
   z-index: 0;
   background: none !important;
+}
+/*chỉnh giới thiệu */
+.about-content.about-horizontal {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin-top: 0;
+  gap: 28px;
+  width: 100vw;
+  max-width: 1300px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 2px 5px 2px 5px; /* Tăng padding trên/dưới */
+  background: #1c2936;
+  border-radius: 24px;
+  box-shadow: 0 0 40px #01fff422;
+  color: #fff;
+  font-size: 1.14rem;
+  border: 1.5px solid #01fff420;
+  min-height: 530px; /* Card cao hơn, chứa vừa cả ảnh và text */
+  overflow: visible;
+}
+.about-section {
+  padding-top: 5px; /* Giảm khoảng trống trên */
+}
+.about-img-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38%;
+  min-width: 250px;
+  max-width: 410px;
+  /* Sửa lỗi ảnh bị lệch: */
+  height: 330px; /* Đặt chiều cao ảnh đúng với min-height của card */
+}
+
+.about-img {
+  width: 98%;
+  max-width: 330px;
+  min-width: 210px;
+  aspect-ratio: 1/1;
+  border-radius: 18px;
+  border: 4px solid #01fff4;
+  box-shadow: 0 0 24px #01fff488;
+  background: #1d2731;
+  object-fit: cover;
+  height: 98%; /* Luôn giữ đúng tỷ lệ vuông và chiều cao */
+  display: block;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 220px;
+  max-width: 830px;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.about-text p {
+  margin-top: 0.2em;
+  margin-bottom: 0.55em;
+  line-height: 1.5;
+}
+
+.about-info-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px 24px;
+  margin: 12px 0 0 0;
+}
+
+.about-info {
+  background: #19222a;
+  color: #01fff4;
+  border-radius: 11px;
+  padding: 8px 18px;
+  font-weight: bold;
+  font-size: 1.06em;
+  box-shadow: 0 0 8px #01fff428;
+  display: flex;
+  align-items: center;
+}
+
+.about-quote {
+  margin-top: 14px;
+  color: #40f9e3;
+  background: #142127;
+  border-left: 4px solid #01fff4;
+  padding: 13px 28px 13px 24px;
+  border-radius: 0 13px 13px 0;
+  font-size: 1.08em;
+  font-style: italic;
+  max-width: 570px;
+}
+
+@media (max-width: 1000px) {
+  .about-content.about-horizontal {
+    flex-direction: column;
+    width: 99vw;
+    max-width: 99vw;
+    padding: 22px 2vw 34px 2vw;
+    gap: 12px;
+    min-height: unset;
+  }
+  .about-img-wrap {
+    width: 100%;
+    min-width: unset;
+    max-width: 99vw;
+    justify-content: center;
+    height: 170px;
+  }
+  .about-img {
+    width: 140px;
+    min-width: 90px;
+    max-width: 96vw;
+    height: 140px;
+    border-radius: 11px;
+  }
+  .about-text {
+    padding-left: 0;
+    max-width: 99vw;
+  }
+  .about-info-list {
+    flex-direction: row;
+    gap: 9px 12px;
+  }
+  .about-quote {
+    max-width: 99vw;
+    font-size: 1em;
+    padding: 10px 10px 10px 16px;
+  }
 }
