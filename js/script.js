@@ -255,3 +255,63 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
     formMessage.textContent = "";
   }, 4000);
 });
+// Star twinkle effect không ảnh hưởng layout
+window.addEventListener("DOMContentLoaded", function () {
+  const starCanvas = document.getElementById("starfield");
+  if (!starCanvas) return;
+  const ctx = starCanvas.getContext("2d");
+  let w = window.innerWidth;
+  let h = window.innerHeight;
+  let starCount = w < 600 ? 50 : 120;
+  let stars = [];
+
+  function resizeCanvas() {
+    w = window.innerWidth;
+    h = window.innerHeight;
+    starCanvas.width = w;
+    starCanvas.height = h;
+    stars = [];
+    for (let i = 0; i < starCount; i++) {
+      stars.push({
+        x: Math.random() * w,
+        y: Math.random() * h,
+        r: 0.5 + Math.random() * 1.5,
+        alpha: Math.random() * 0.7 + 0.3,
+        dx: (Math.random() - 0.5) * 0.05,
+        dy: (Math.random() - 0.5) * 0.05,
+        twinkle: 0.006 + Math.random() * 0.01,
+      });
+    }
+  }
+  window.addEventListener("resize", resizeCanvas);
+  resizeCanvas();
+
+  function drawStars() {
+    ctx.clearRect(0, 0, w, h);
+    for (let star of stars) {
+      // Twinkle
+      star.alpha += star.twinkle * (Math.random() > 0.5 ? 1 : -1);
+      if (star.alpha < 0.3) star.alpha = 0.3;
+      if (star.alpha > 1) star.alpha = 1;
+      // Slight move
+      star.x += star.dx;
+      star.y += star.dy;
+      if (star.x < 0) star.x = w;
+      if (star.x > w) star.x = 0;
+      if (star.y < 0) star.y = h;
+      if (star.y > h) star.y = 0;
+      // Draw
+      ctx.save();
+      ctx.globalAlpha = star.alpha;
+      ctx.beginPath();
+      ctx.arc(star.x, star.y, star.r, 0, 2 * Math.PI);
+      ctx.fillStyle = "#bfefff";
+      ctx.shadowColor = "#00fff4";
+      ctx.shadowBlur = 7;
+      ctx.fill();
+      ctx.restore();
+    }
+    requestAnimationFrame(drawStars);
+  }
+  drawStars();
+});
