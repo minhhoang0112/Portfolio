@@ -326,9 +326,13 @@ html {
   margin-bottom: 10px;
 }
 .info-item:hover {
-  transform: translateY(-10px) scale(1.02);
-  box-shadow: 0 0 48px #01fff450;
-  border-color: var(--color-accent);
+  background: rgba(1, 41, 57, 0.93) !important;
+  border-color: #01fff4;
+  box-shadow: 0 0 48px #01fff477;
+  color: #fff;
+  transform: translateY(-12px) scale(1.03);
+  transition: background 0.22s, border-color 0.22s, box-shadow 0.22s,
+    transform 0.17s;
 }
 
 /* Skills Section */
@@ -424,9 +428,14 @@ html {
   transition: transform 0.2s;
 }
 .education-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 30px #01fff430;
+  transform: translateY(-5px) scale(1.01);
+  background: rgba(1, 41, 57, 0.95);
+  box-shadow: 0 0 30px #01fff4bb, 0 2px 16px #0008;
+  border-color: #01fff4;
+  transition: background 0.22s, border-color 0.22s, box-shadow 0.22s,
+    transform 0.17s;
 }
+
 .education-item h3,
 .education-item h4 {
   color: var(--color-accent);
@@ -471,9 +480,14 @@ html {
   transition: transform 0.2s, box-shadow 0.2s;
 }
 .project-item:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 0 45px #01fff430;
+  background: rgba(7, 44, 70, 0.98);
+  box-shadow: 0 0 60px #01fff4aa, 0 4px 28px #000c;
+  border-color: #01fff4;
+  transform: translateY(-12px) scale(1.01);
+  transition: background 0.22s, border-color 0.22s, box-shadow 0.22s,
+    transform 0.17s;
 }
+
 .project-img {
   width: 220px;
   height: 150px;
