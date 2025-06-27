@@ -20,6 +20,13 @@
     />
   </head>
   <body>
+    <video autoplay loop muted playsinline id="bg-video">
+      <source src="videos/background1.mp4" type="video/mp4" />
+      Trình duyệt của bạn không hỗ trợ video.
+    </video>
+    <div class="bg-overlay"></div>
+    <canvas id="starfield"></canvas>
+    <div id="star-overlay"></div>
     <header class="header">
       <div class="logo">
         <a href="#home">H.MINH<span>.DEV</span></a>
@@ -973,6 +980,5 @@
       </button>
     </footer>
     <script src="js/script.js"></script>
-    <canvas id="starfield"></canvas>
   </body>
 </html>
