@@ -318,3 +318,20 @@ window.addEventListener("DOMContentLoaded", function () {
 document.getElementById("toTopBtn").onclick = function () {
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
+
+// Danh sách các ảnh muốn hiển thị luân phiên
+const avatarImages = [
+  "images/avatar1.jpg",
+  "images/avatar.jpg",
+  "images/avatar2.jpg",
+  "images/avatar3.jpg",
+  "images/avatar4.jpg",
+];
+
+let avatarIndex = 0;
+const avatarImg = document.getElementById("avatar-slideshow");
+
+setInterval(() => {
+  avatarIndex = (avatarIndex + 1) % avatarImages.length;
+  avatarImg.src = avatarImages[avatarIndex];
+}, 2000);
